@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Geocoder</title>
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/tablestyle.css" type="text/css">
+</head>
+<body>
+    <h1>Super Geocoder</h1>
+    <h3>Please upload your CSV file. Make sure values containing Address should be in the Address Column</h3>
+    <div class="form">
+        <form action="/success" method="POST" enctype="multipart/form-data">
+            <input type="file" name="CSV_File" id="file_input"><br><br>
+            <input type="submit" id="submit_button">
+        </form>
+    </div>
+
+    <div class="table">
+        {% include [table] ignore missing %}
+    </div>
+</body>
+</html>
