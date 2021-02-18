@@ -1,0 +1,20 @@
+body{
+    background:#007FFF;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form{
+    margin-top: 40px;
+}
+
+#file_input{
+    padding-left: 157px;
+    font-size: larger;
+}
+
+#submit_button{
+    font-size: x-large;
+}
